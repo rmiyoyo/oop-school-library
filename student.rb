@@ -18,6 +18,6 @@ class Student < Person
 
   def classroom=(classroom)
     @classroom = classroom
-    classroom.students.include?(self)
+    classroom.students << self unless classroom.students.include?(self)
   end
 end

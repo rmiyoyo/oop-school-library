@@ -2,7 +2,7 @@ class Classroom
   attr_accessor :label
   attr_reader :students
 
-  def initialize(label)
+  def initialize(label = 'Unknown')
     @label = label
     @students = []
   end
